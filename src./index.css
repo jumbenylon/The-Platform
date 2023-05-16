@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./fonts/NeueMontreal-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./fonts/NeueMontreal-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./fonts/NeueMontreal-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./fonts/NeueMontreal-Light.otf') format('opentype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./fonts/NeueMontreal-LightItalic.otf') format('opentype');
+  font-weight: light;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./fonts/NeueMontreal-Medium.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('./fonts/NeueMontreal-MediumItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+/* Define rules for other fonts */
+
+
+
+body {
+  /* font-family: 'NeueMontreal', sans-serif; */
+  font-family: 'DM Sans', sans-serif;
+  /* background-color: #E5E5E5; */
+}
+
+h1 {
+  font-family: 'NeueMontreal', sans-serif;
+}
+
+.fit {
+  /* min-height: calc(100vh - 30px); */
+  min-height: 100vh;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Color Styles */
+.platform-neutral-gray{
+  color: #999CA0;
+}
+
+.platform-yellow{
+  color: #FCB400;
+}
+
+.bg-platform-yellow{
+  background: #FCB400;
+}
+
+.platform-neutral-dark{
+  color: #333333;
+}
+
+.platform-light-gray{
+  color: #F2F2F2;
+}
+
+.bg-platform-light-gray{
+  background: #F2F2F2;
+}
+.border-platform-light-gray{
+  border: #F2F2F2;
+}
+
+.platform-gray{
+  color: #757575;
+}
+
+.bg-platform-dark{
+  background: #333333
+}
+
+.bg-overlay{
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+/* Button Styles */
+.platform-button-yellow{
+  background: #FCB400;
+  color: #000000;
+}
