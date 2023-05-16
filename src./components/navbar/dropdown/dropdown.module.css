@@ -1,0 +1,114 @@
+.cursor_pointer {
+   cursor: pointer;
+}
+
+.button_parent {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   gap: 7px;
+   /* background: white; */
+}
+
+.nav_title {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between !important;
+   gap: 7px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 14px;
+   /* color: #ffffff; */
+   background: none;
+   box-shadow: none;
+   border: none;
+}
+
+.btn {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active {
+   color: #FCB400;
+}
+
+.list_body {
+   position: absolute;
+   background: white;
+   left: 0;
+   padding-top: 30px;
+}
+.list_el {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+   /* color: #ffffff; */
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 16px 24px 16px 16px;
+   gap: 10px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+   white-space: nowrap;
+}
+.list_el:hover {
+   background: #F2F2F2;
+}
+
+.free_check {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 2px 4px;
+   gap: 10px;
+   background: #FCB400;
+   border-radius: 4px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 12px;
+   color: black;
+}
+
+@media only screen and (min-width: 992px) {
+   .dropdown_body {
+      position: relative;
+      z-index: 10;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .button_parent {
+      width: 100%;
+   }
+
+   .nav_title {
+      width: 100%;
+   }
+   .nav_title svg {
+      transform: rotate(-90deg);
+   }
+
+   .list_body {
+      width: 100%;
+      left: 0;
+      background: white;
+      z-index: 99;
+      height: calc(100vh - 72px);
+      top: 72px;
+      padding-top: 0;
+   }
+   .list_el {
+      padding: 24px 24px 24px 16px;
+   }
+}

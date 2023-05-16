@@ -1,0 +1,254 @@
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.filter_blur {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #fff;
+}
+
+.header_body {
+  width: 1200px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 54px;
+  background: #fff;
+}
+
+.logo {
+  width: 120px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 62px;
+}
+
+.back_filter {
+}
+
+.menu_items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.nav_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* color: #ffffff; */
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+.nav_title:hover {
+  /* font-weight: 800; */
+  color: #FCB400;
+}
+
+.buttons_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.buttons_block button {
+  /* padding: 16px 32px; */
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow_icon {
+  margin-left: auto;
+}
+
+.sign_up {
+  background: none;
+  /* color: #ffffff; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  width: 112px;
+  height: 46px;
+}
+.sign_up:hover {
+  font-weight: 800;
+  color: #FCB400;
+}
+
+.get_started {
+  color: black;
+  text-transform: capitalize;
+  background: #FCB400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  width: 145px;
+  height: 46px;
+}
+
+.get_started span:hover {
+  font-weight: 700;
+}
+
+.active {
+  color: #FCB400;
+}
+
+.menu_icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header_body {
+    width: 100%;
+    padding: 0 12px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .menu_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    /* color: #ffffff; */
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+  .menu_icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    max-width: 316px;
+    width: 316px;
+    min-height: 100vh;
+    height: 100%;
+    padding: 0 0 138px 0;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  .back_filter {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.16);
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .back_arrow {
+    border: none;
+    background: none;
+    /* color: #ffffff; */
+  }
+
+  .menu_items {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    gap: 0;
+  }
+  .menu_items_border {
+    padding: 24px 16px 24px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .menu_items div {
+    width: 100%;
+  }
+
+  .buttons_block {
+    flex-flow: row-reverse;
+    padding: 0 16px;
+  }
+  .sign_up {
+   padding: 0px !important;
+  }
+
+  .mobile_menu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    /* color: #ffffff; */
+    padding: 0px 15px;
+  }
+
+  .selected_name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .parent_position {
+    position: relative;
+  }
+}
